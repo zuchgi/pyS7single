@@ -1,0 +1,21 @@
+descriptor-schema-version: "2.7"
+info:
+  name: pys7single
+  version: latest
+app:
+  cpuarch: x86_64
+  env:
+    PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+  resources:
+    network:
+    - interface-name: eth0
+      ports: {}
+    profile: c1.large
+  startup:
+    rootfs: rootfs.tar
+    target:
+    - /bin/sh
+    - -c
+    - cd / && python3 main.py
+    workdir: /code
+  type: docker

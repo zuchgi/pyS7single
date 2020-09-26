@@ -1,0 +1,16 @@
+{
+    "isDebug":"false",
+    "time": {
+        "telemetry": 1,
+        "reconnect": 20,
+        "report": 2
+    },
+    "server": {
+        "host":"106.15.239.136",
+        "port": 1883,
+        "user": null,
+        "password": null
+    },
+    "rack": 0,
+    "slot": 1
+}
